@@ -1,0 +1,662 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: rgb(125,5,224);
+    background: linear-gradient(90deg, rgba(125,5,224,1) 0%, rgba(0,0,0,1) 58%);
+}
+
+
+.navbar button:hover{
+    color:black;
+    background: rgb(216,125,255);
+background: linear-gradient(90deg, rgba(216,125,255,1) 0%, rgba(255,160,0,1) 100%);
+    box-shadow: 3px 3px bisque;
+}
+
+
+body {
+margin: 0;
+padding: 0;
+background-image: url('kendrick-fernandez-BD_MFmE_uvY-unsplash.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+font-family: Arial, sans-serif;
+overflow-x: hidden;
+}
+
+
+
+.section {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 100px 50px;
+color: white;
+}
+
+.section h1 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+.section p {
+font-size: 18px;
+}
+
+.left {
+flex: 1;
+position: relative;
+}
+
+.left::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: -1;
+}
+
+.right {
+flex: 1;
+}
+
+
+img{
+    width:600px;
+    height:500px;
+}
+
+textarea{
+    width:500px;
+    height:150px;
+}
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+}
+
+
+.section1 {
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 .left::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.section2 {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.section2 .left {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.section3 {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.section3 .left, .section3 .right {
+    flex: 1;
+}
+
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.section3 .left textarea {
+    width: 90%;
+    padding: 10px;
+   
+    background: rgb(109, 2, 128);
+    background: linear-gradient(90deg, rgba(109, 2, 128, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+
+    
+    margin-left: 0; 
+}
+
+.section3 .right textarea {
+    width: 90%;
+    padding: 10px;
+
+    background: rgb(68, 208, 255);
+    background: linear-gradient(90deg, rgba(68, 208, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    color: white;
+   
+}
+
+.section1 h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.section1 p {
+    font-size: 24px;
+}
+
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fade-in-scroll {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid white;
+    width: 0;
+    animation: typing 4s steps(30) infinite, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section h1,
+.section p {
+    animation: fade-in 2s ease-out forwards;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+    opacity: 0;
+    animation: fade-in 2s ease-out forwards, scale-in 2s ease-out forwards;
+}
+
+.section img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.section5 .left img{
+    margin-right:90px;
+    width:90%;
+
+}
+.section1 .left{
+    display:inline-block;
+
+}
+.section1 .left .text{
+    font-size:6em;
+    letter-spacing: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-right: 10px solid;
+    width: 100%;
+    font-weight: bolder;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+            typing 4s steps(30) infinite,
+            cursor 0.3s step-end infinite alternate;
+}
+
+.navbar button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgb(125, 5, 224);
+    background: linear-gradient(90deg, rgba(125, 5, 224, 1) 0%, rgba(0, 0, 0, 1) 58%);
+    color: white;
+    transition: all 0.5s linear;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px; /* Adjust margin for button spacing */
+}
+
+
+@keyframes cursor{
+    25%{
+        border-color:transparent;
+    }
+    50%{
+        border-color:white;
+    }
+    75%{
+        border-color:transparent;
+    }
+    100%{
+        border-color:white;
+    }
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+    
+}
+
+.section2 .left .text2{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    animation:colorswap2 1s infinite linear;
+
+}
+
+.section2 .left .text2-1{
+    font-size:30px;
+    font-weight: bold;
+    text-align: center;
+    animation:colorswap1 4s infinite;
+}
+
+@keyframes colorswap1{
+    0%{
+        color:bisque;
+    }
+    25%{
+        color:rgb(252, 252, 137);
+
+    }
+    50%{
+        color:skyblue;
+    }
+    75%{
+        color:yellow;
+    }
+    100%{
+        color:aqua;
+    }
+}
+
+@keyframes colorswap2{
+    0%{
+        background: rgb(23,166,255);
+background: linear-gradient(90deg, rgba(23,166,255,1) 0%, rgba(234,255,0,1) 100%, rgba(0,0,0,1) 100%);
+-webkit-background-clip:text;
+color:transparent;
+    }
+    10%{
+        background: rgb(80, 179, 240);
+background: linear-gradient(90deg, rgb(99, 194, 253) 0%, rgb(245, 255, 133) 100%, rgb(89, 133, 35) 100%);
+-webkit-background-clip:text;
+color:transparent;
+
+    }
+    20%{
+        background: rgb(140, 201, 239);
+        background: linear-gradient(90deg, rgb(155, 216, 254) 0%, rgb(248, 255, 170) 100%, rgb(131, 190, 58) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    30%{
+        background: rgb(190, 230, 255);
+        background: linear-gradient(90deg, rgb(181, 225, 253) 0%, rgb(240, 247, 160) 100%, rgb(217, 255, 171) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    40%{
+        background: rgb(248, 252, 255);
+        background: linear-gradient(90deg, rgb(237, 241, 243) 0%, rgb(248, 252, 200) 100%, rgb(221, 255, 111) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    50%{
+        background: rgb(151, 231, 255);
+        background: linear-gradient(90deg, rgb(136, 209, 246) 0%, rgb(98, 168, 255) 100%, rgb(216, 180, 255) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    60%{
+        background: rgb(107, 207, 237);
+        background: linear-gradient(90deg, rgb(99, 183, 225) 0%, rgb(61, 140, 236) 100%, rgb(171, 112, 233) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    70%{
+        background: rgb(50, 207, 255);
+        background: linear-gradient(90deg, rgb(81, 197, 255) 0%, rgb(18, 109, 219) 100%, rgb(156, 76, 241) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    80%{
+        background: rgb(16, 199, 255);
+        background: linear-gradient(90deg, rgb(22, 177, 254) 0%, rgb(6, 77, 164) 100%, rgb(131, 32, 237) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+    90%{
+        background: rgb(16, 199, 255);
+        background: linear-gradient(90deg, rgb(0, 162, 243) 0%, rgb(18, 88, 174) 100%, rgb(107, 0, 221) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+
+    100%{
+        background: rgb(40, 219, 207);
+        background: linear-gradient(90deg, rgb(58, 250, 215) 0%, rgb(4, 57, 118) 100%, rgb(120, 3, 163) 100%);
+        -webkit-background-clip:text;
+        color:transparent;
+    }
+}
+
+
+@keyframes colorswap3{
+    0%{
+        color:rgb(18, 255, 227);
+    }
+    25%{
+        color:rgb(117, 71, 255);
+
+    }
+    50%{
+        color:rgb(223, 246, 255);
+    }
+    75%{
+        color:yellow;
+    }
+    100%{
+        color:rgb(255, 244, 121);
+    }
+}
+@keyframes colorswap4{
+    0%{
+        color:rgb(132, 67, 230);
+    }
+    25%{
+        color:rgb(106, 143, 247);
+
+    }
+    50%{
+        color:rgb(63, 153, 255);
+    }
+    75%{
+        color:rgb(63, 255, 229);
+    }
+    100%{
+        color:rgb(191, 255, 221);
+    
+    }
+}
+
+#txt1, #txt2{
+    padding:10px;
+    margin:10px;
+}
+.section4 .left .sec4txt{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+
+    animation:colorswap3 5s linear infinite;
+    padding-bottom: 40px;
+}
+.sec4txt2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-right: 20px;
+    justify-content: left;
+    line-height: 50px;
+}
+.faq-heading {
+    margin-top: -100px;
+    font-size: 50px;
+    margin-bottom: 40px;
+    background: rgb(255,68,68);
+background: linear-gradient(90deg, rgba(255,68,68,1) 3%, rgba(0,75,255,1) 100%);
+-webkit-background-clip: text;
+color:transparent;
+
+    
+}
+
+.section6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+    color: white;
+}
+
+.faq-card {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    font-weight: bold;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.faq-card p {
+    margin: 10px 0;
+}
+
+.q1,.q2,.q3 {
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(246, 211, 169);
+}
+
+.a1,.a2,.a3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+label{
+    font-weight: bolder;
+    margin-left:20px;
+}
+.section1 .left .txtt{
+    animation: colorswap4 4s linear infinite;
+    margin-bottom:20px;
+    font-weight: bold;
+
+
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar button {
+        margin: 0 5px;
+    }
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px;
+    }
+    .section1 .left .text {
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
+    .section1 .left .txtt {
+        font-size: 1.5em;
+    }
+   
+    .section2 .left .text2 {
+        font-size: 2em;
+    }
+    .section2 .left .text2-1 {
+        font-size: 1em;
+        line-height: 30px;
+    }
+    .faq-heading {
+        font-size: 2.5em;
+    }
+    .faq-card {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .q1, .q2, .q3,
+    .a1, .a2, .a3 {
+        font-size: 1.2em;
+    }
+    .section6 {
+        padding: 50px 20px;
+    }
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+   
+    z-index: 1000;
+    height: 50px;
+    padding: 10px 20px;
+    flex-wrap: wrap; 
+}
+
+.navbar button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgb(125, 5, 224);
+    background: linear-gradient(90deg, rgba(125, 5, 224, 1) 0%, rgba(0, 0, 0, 1) 58%);
+    color: white;
+    transition: all 0.5s linear;
+    border: none;
+    cursor: pointer;
+    margin: 5px; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center; 
+        padding: 10px; 
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}
+.section3 .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#output-frame {
+    flex: 1;
+    width: 100%; 
+    height:100%;
+    border: none; 
+    background-color:white;
+}

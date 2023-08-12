@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(114, 0, 133);
+    background: linear-gradient(90deg, rgba(114, 0, 133, 1) 0%, rgba(0, 0, 0, 1) 61%);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#vid-par {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+}
+
+#my-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: -1;
+}
+
+#right h1 {
+    width: 32%;
+    font-family: 'Borel', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 250px;
+    margin-left: 1010px;
+    animation: lst 6s infinite;
+}
+
+.start {
+    margin-top: 35px;
+    margin-left: 1100px;
+}
+
+@keyframes lst {
+    0% {
+        color: rgb(37, 113, 31);
+    }
+    20% {
+        color: rgb(162, 0, 255);
+    }
+    40% {
+        color: red;
+    }
+    60% {
+        color: rgb(0, 0, 255);
+    }
+    80% {
+        color: rgba(104, 233, 12, 0.375);
+    }
+    100% {
+        color: rgb(191, 0, 0);
+    }
+}
+
+@keyframes buttonAnim {
+    0% {
+        color: rgb(0, 255, 115);
+    }
+    20% {
+        color: rgba(0, 42, 255, 0.766);
+    }
+    40% {
+        color: red;
+    }
+    60% {
+        color: rgb(0, 0, 255);
+    }
+    80% {
+        color: rgba(106, 255, 0, 0.907);
+    }
+    100% {
+        color: rgb(191, 0, 0);
+    }
+}
+
+@keyframes cardsAnim {
+    0% {
+        color: #833ab4;
+    }
+    20% {
+        color: #fd1d1d;
+    }
+    40% {
+        color: #fcb045;
+    }
+    60% {
+        color: #a80096;
+    }
+    80% {
+        color: violet;
+    }
+    100% {
+        color: #5f0055;
+    }
+}
+
+#about {
+    width: 100%;
+    height: 30%;
+    margin-top: 60px;
+}
+
+.left {
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-top: 300px;
+    margin-left: 200px;
+}
+
+.right {
+    font-size: 80px;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    margin-right: 900px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+body {
+    background: rgb(114, 0, 133);
+    background: linear-gradient(90deg, rgba(114, 0, 133, 1) 0%, rgba(0, 0, 0, 1) 61%);
+}
+
+@keyframes color2 {
+    0% {
+        color: rgb(184, 184, 48);
+    }
+    25% {
+        color: rgb(132, 239, 33);
+    }
+    50% {
+        color: rgb(38, 232, 135);
+    }
+    75% {
+        color: rgb(231, 178, 53);
+    }
+    100% {
+        color: rgb(255, 255, 239);
+    }
+}
+
+h1 {
+    color: white;
+    display: flex;
+    width: 300px;
+    animation: color2 5s infinite;
+}
+
+.right h1 {
+    font-size: 60px;
+    width: 600px;
+    margin-left: 300px;
+}
+
+.upload {
+    display: flex;
+}
+
+.left h1 {
+    width: 400px;
+}
+
+#file, #submit {
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#submit {
+    margin-top: 20px;
+    background-color: rgb(210, 220, 15);
+    padding: 10px;
+}
+
+
+.navbar button:hover {
+    color: black;
+    background: rgb(216, 125, 255);
+    background: linear-gradient(90deg, rgba(216, 125, 255, 1) 0%, rgba(255, 160, 0, 1) 100%);
+    box-shadow: 3px 3px bisque;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.card {
+    background: linear-gradient(90deg, rgba(114, 0, 133, 1) 0%, rgba(0, 0, 0, 1) 61%);
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(114, 0, 133, 0.8);
+    animation: cardGlow 2s infinite;
+}
+
+.card:hover {
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: glowName 2s infinite;
+}
+
+@keyframes glowName {
+    0% {
+        color: rgb(184, 184, 48);
+    }
+    25% {
+        color: rgb(132, 239, 33);
+    }
+    50% {
+        color: rgb(38, 232, 135);
+    }
+    75% {
+        color: rgb(231, 178, 53);
+    }
+    100% {
+        color: rgb(255, 255, 239);
+    }
+}
+
+@keyframes cardGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(114, 0, 133, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.txt {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.card-text {
+    color: rgb(236, 236, 185);
+    text-justify: left;
+}
+
+@media screen and (max-width: 768px) {
+    #right h1 {
+        width: 100%;
+        font-size: 40px;
+        margin-top: 150px;
+        margin-left: 0;
+        text-align: center;
+        animation: none;
+    }
+    .start {
+        margin-top: 20px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .left,
+    .right {
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar button {
+        margin: 5px;
+    }
+    .card-group {
+        margin-top: 50px;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+    z-index: 1000;
+    height: 50px;
+    padding: 10px 20px;
+    flex-wrap: wrap; 
+}
+
+.navbar button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgb(125, 5, 224);
+    background: linear-gradient(90deg, rgba(125, 5, 224, 1) 0%, rgba(0, 0, 0, 1) 58%);
+    color: white;
+    transition: all 0.5s linear;
+    border: none;
+    cursor: pointer;
+    margin: 5px; 
+}
+
+
+@media screen and (max-width: 480px) {
+    #right h1 {
+        font-size: 30px;
+        margin-top: 120px;
+        animation: none;
+    }
+    .start {
+        margin-top: 10px;
+    }
+    .left,
+    .right {
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+    }
+    .navbar {
+        height: auto;
+    }
+    .navbar button {
+        margin: 5px;
+    }
+    .card-group {
+        margin-top: 30px;
+    }
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center; 
+        padding: 10px; 
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}

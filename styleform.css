@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+   
+  
+    margin-left:380px;
+    display:flex;
+    position:fixed;
+    z-index: 1000;
+    height:10px;
+    color:transparent;
+    box-shadow: 5px 5px 5px;
+    
+    
+}
+.navbar button{
+    padding:0px 5px;
+    align-content: center;
+    margin-top:-20px;
+    font-size:12px;
+    font-weight: bolder;
+    background: rgb(125,5,224);
+    background: linear-gradient(90deg, rgba(125,5,224,1) 0%, rgba(0,0,0,1) 58%);
+    color:white;
+    transition: all 0.5s linear;
+}
+.logo{
+ 
+    width:300px;
+    height:50px;
+    display:flex;
+    margin-left:-736px;
+    width:fit-content;
+    transition: all 0.5s linear;
+}
+.navbar button:hover{
+    color:black;
+    background: rgb(216,125,255);
+background: linear-gradient(90deg, rgba(216,125,255,1) 0%, rgba(255,160,0,1) 100%);
+    box-shadow: 3px 3px bisque;
+}
+
+
+
+body{
+    background: rgb(162,5,213);
+    background: linear-gradient(90deg, rgba(162,5,213,1) 0%, rgba(0,0,0,1) 62%); 
+}
+ 
+
+
+.form-control{
+    padding:10px;
+    
+   }
+input{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 10px;
+}
+
+@keyframes color1{
+       0% {
+        color:rgb(255, 197, 121);
+        }
+         25%{
+         color:rgb(199, 249, 73);
+        
+         }
+        50%{
+       color:rgb(252, 166, 52);
+    }
+        75%{
+            
+           color:rgb(233, 233, 49);
+        }
+            100%{
+                
+               color:rgb(237, 255, 255);
+            }
+}
+
+label{
+    animation:color1 4s infinite;
+    font-weight: bolder;
+    font-size:20px;
+}
+button{
+    box-shadow: 5px 5px 5px black;
+    
+    
+}
+select{
+    box-shadow: 5px 5px 5px rgb(200, 101, 217);
+}
+.formbody{
+    width:500px;
+    height:500px;
+   
+    box-shadow: 10px 10px 10px;
+    margin-top:50px
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+    padding: 10px 20px;
+    flex-wrap: wrap; 
+}
+
+.navbar button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgb(125, 5, 224);
+    background: linear-gradient(90deg, rgba(125, 5, 224, 1) 0%, rgba(0, 0, 0, 1) 58%);
+    color: white;
+    transition: all 0.5s linear;
+    border: none;
+    cursor: pointer;
+    margin: 5px; 
+}
+body {
+    background: rgb(162, 5, 213);
+    background: linear-gradient(90deg, rgba(162, 5, 213, 1) 0%, rgba(0, 0, 0, 1) 62%);
+}
+.formbody {
+    width: 500px;
+    height: 500px;
+ 
+    box-shadow: 10px 10px 10px;
+    margin-top: 100px; 
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .navbar button {
+        margin: 5px 0;
+    }
+    .formbody {
+        width: 90%;
+        margin: 50px auto 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center; 
+        padding: 10px; 
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        margin-left: 0;
+        justify-content: center;
+        padding: 10px;
+    }
+    .navbar button {
+        margin-top: 5px;
+    }
+    .logo {
+        margin-left: -220px;
+    }
+    .formbody {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar button {
+        margin: 5px 0;
+    }
+    .logo {
+        margin-left: -180px;
+    }
+    .formbody {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+
+
+

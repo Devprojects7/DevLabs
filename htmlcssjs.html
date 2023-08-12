@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Labs HTML CSS JS</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="home.html"><button>Home</button></a>
+            <a href="about.html"><button>About Us</button></a>
+            <a href="htmlcssjs.html"><button>Code Runner</button></a>
+            <a href="files.html"><button>Files</button></a>
+            <a href="form.html"><button>Join Us</button></a>
+        </nav>
+    </div>
+
+    <div class="button-container">
+        <button id="run-button" class="styled-button">Run</button>
+        <button id="refresh-button" class="styled-button">Refresh</button>
+    </div>
+    <div class="container"></div>
+    <div class="left">
+        <label for="html" class="label-container">HTML</label>
+        <textarea name="html" id="html-code"></textarea>
+        <label for="css" class="label-container">CSS</label>
+        <textarea name="css" id="css-code"></textarea>
+        <label for="javascript" class="label-container">JAVASCRIPT</label>
+        <textarea name="javascript" id="javascript-code"></textarea>
+    </div>
+    <div class="right">
+        <label class="output">OUTPUT</label>
+        <iframe id="output"></iframe>
+
+        <button id="save-button" class="styled-button">Save</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

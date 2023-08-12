@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(114, 0, 133);
+    background: linear-gradient(90deg, rgba(114, 0, 133, 1) 0%, rgba(0, 0, 0, 1) 61%);
+    color: white;
+ 
+    margin: 0;
+}
+
+
+@keyframes colorAnimation {
+    0% {
+        color: rgb(184, 184, 48);
+    }
+    25% {
+        color: rgb(132, 239, 33);
+    }
+    50% {
+        color: rgb(38, 232, 135);
+    }
+    75% {
+        color: rgb(231, 178, 53);
+    }
+    100% {
+        color: rgb(255, 255, 239);
+    }
+}
+
+
+h1 {
+    color: white;
+    display: flex;
+    width: 300px;
+    animation: colorAnimation 5s infinite;
+}
+
+
+.right h1 {
+    font-size: 40px;
+    width: 600px;
+ 
+}
+
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.left h1 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#file, #submit {
+    font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin: 10px 0;
+}
+
+#submit {
+    background-color: rgb(210, 220, 15);
+    padding: 10px;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+ 
+    z-index: 1000;
+    height: 50px;
+    padding: 10px 20px;
+    flex-wrap: wrap; 
+}
+
+.navbar button {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    background: rgb(125, 5, 224);
+    background: linear-gradient(90deg, rgba(125, 5, 224, 1) 0%, rgba(0, 0, 0, 1) 58%);
+    color: white;
+    transition: all 0.5s linear;
+    border: none;
+    cursor: pointer;
+    margin: 5px; 
+}
+
+
+.navbar button:hover {
+    color: black;
+    background: rgb(216, 125, 255);
+    background: linear-gradient(90deg, rgba(216, 125, 255, 1) 0%, rgba(255, 160, 0, 1) 100%);
+    box-shadow: 3px 3px bisque;
+}
+
+
+@media screen and (max-width: 768px) {
+    .upload {
+        flex-direction: column;
+        text-align: center;
+    }
+    .left h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    #file, #submit {
+        width: 100%;
+    }
+    .right h1 {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        animation: none;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .upload {
+        margin-top: 50px;
+    }
+    .right h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+}
+
+.upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .upload {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+}
+
+
+.left {
+    width: 60%; 
+    padding: 20px; 
+  
+    border-radius: 10px; 
+    margin-right: 20px; 
+}
+
+
+.right {
+    width: 40%; 
+    padding: 20px; 
+  
+    border-radius: 10px; 
+    margin-left: 20px; 
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: center; 
+        padding: 10px; 
+    }
+    .navbar button {
+        margin: 5px;
+    }
+}
+
